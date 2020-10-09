@@ -6,13 +6,28 @@
     
     <body>
         <h1 onclick= "changeText(this)">It's our Website!</h1>
+        
+        <img onmouseover="big(this)" onmouseout="normal(this)" border="0" src= "img/smiley.jpg" alt="Smiley face" width ="200" height="200">
+        <p>Click the button to display today's day of the month. </p>
+        <button onclick="myFunction()">Day of the month</button>
+        <p id="date"></p>
+     
         <script>
            function changeText(id){
                id.innerHTML = "Yoooooooo!!!!";
            }
             
             alert('Welcome to Alexia and Kia Website');
-        </script>
+            
+            function big(I) {
+            I.style.height ="400px";
+            I.style.width ="400px";
+        }
+     function normal(I) {
+         I.style.height ="200px";
+         I.style.width ="200px";
+     }   
+        </script> 
         
 
     </body>
